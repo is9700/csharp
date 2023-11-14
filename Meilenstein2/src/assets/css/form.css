@@ -1,0 +1,68 @@
+.podcasttitle::after{
+    content: "*"; 
+
+}
+.podcast::after{
+    content: "*"; 
+}
+.email::after{
+ 
+    content: "*"; 
+}
+.datum::after{
+    content: "*"; 
+}
+.uhr::after{
+    content: "*"; 
+}
+.podcastowner::after
+{
+    content: "*";
+}
+a:hover{
+    background-color:bisque;
+}
+#podcastinfo
+{   border-radius: 20px;
+    background-color: bisque;
+}
+
+#verantwortliche
+{
+    background-color: bisque;
+}
+#ende
+{
+    background-color: bisque;
+}
+
+input:valid { background-color: greenyellow; }
+
+input:invalid { background-color: brown; }
+
+input:required { border: 5px solid; }
+.submit
+{
+    border-radius: 20px;
+    border-color: black;
+}
+
+input:hover 
+{   border-radius: 20px;
+    background-color: bisque;
+}
+
+#haupt
+{
+    border: 5px solid black;
+    padding: 1em;
+    margin-bottom: 50px;
+    background-color: bisque;
+    border-radius: 20px;
+}
+header,div,footer,nav{
+    padding: 5;
+    border-radius: 5px;
+    margin-top: 5px;
+
+}

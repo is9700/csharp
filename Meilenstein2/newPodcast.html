@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/form.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/index.css">
+    <title>New Podcast</title>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <header class="clearing">
+
+            <img src="src/assets/img/img/menu.png" alt="Vdadar" width="50" height="50" class="floating">
+
+            <h1> Add new Podcast</h1>
+
+
+
+           
+        </header>
+        <nav class="navigation" id="flexnav">
+
+            <a href="index.html">Home||</a>
+
+
+            <a href="podcast.html">Podcasts||</a>
+
+
+
+            <a href="episode.html">Episodes||</a>
+
+
+
+            <a href="newPodcast.html">New Podcast||</a>
+            <a href="/index2.html">Index 2</a>
+
+
+        </nav>
+        <main>
+            <article class="container">
+            <section>
+                <h4>Input your new Podcast here</h4>
+                <div id="haupt">
+                    <form action="https://labs.inf.fh-dortmund.de/podcastService/testCreatePodcast.php" method="post">
+                        <fieldset>
+
+                            <legend> <strong>podcast informationen </strong></legend>
+
+
+                            <p id="pctitle">
+                                <label for="pctitle">Podcast Title*: </label>
+                                <input class="podcasttitle" type="text" id="pctitle" name="pctitle" required="required"
+                                    maxlength="100" pattern="[A-Z]+[a-zA-Z]*" placeholder="Title"></input> <br>
+                            </p>
+                            <p>
+                                Podcast Categories:
+                                <input type="checkbox" name="pccategories" value="drama">Drama<br>
+                                <input type="checkbox" name="pccategories" value="fitness">Fitness<br>
+                                <input type="checkbox" name="pccategories" value="crime">Crime<br>
+                            </p>
+
+
+
+
+
+
+                            <p>
+                                <label for="pcdescription">description:
+                                    <textarea name="pcdescription" id="pcdescription" maxlength="500" cols="60" rows="8"
+                                        placeholder=".... "></textarea>
+                                </label>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend><strong> verantwortliche personen </strong> </legend>
+                            <p>
+                                <label for="pcauthors">Podcast Authors: </label>
+                                <input type="text" id="pcauthors" name="pcauthors" pattern=".*[^,]"
+                                    placeholder="Authors"></input>
+                                <br>
+                            </p>
+
+                            <p>
+                                <label for="pcownername">Podcast Owner*: </label>
+                                <input class="podcastowner" type="text" id="pcownername" name="pcownername"
+                                    required="required" placeholder="Owner"></input> <br>
+                            </p>
+                            <p>
+                                <label for="pcowneremail">Podcast Owner's Email*</label>
+                                <input class="email" type="email" id="pcowneremail" name="pcowneremail"
+                                    required="required" placeholder="Email"></input>
+                                <br>
+                            </p>
+
+
+
+                        </fieldset>
+
+                        <fieldset>
+                            <legend><strong>letzte update </strong></legend>
+                            <p><label for="pclastupdatedate">Datum * : </label>
+                                <input class="datum" type="date" id="pclastupdatedate" name="pclastupdatedate"
+                                    required="required" min="2000-01-01"></input> <br>
+                            </p>
+                            <p>
+                                <label for="pclastupdatetime"> Uhrzeit*: </label>
+                                <input class="uhr" type="time" id="pclastupdatetime" name="pclastupdatetime"
+                                    required="required"></input> <br>
+
+
+                            </p>
+                        </fieldset>
+
+                        <fieldset>
+                            <input class="submit" type="submit">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <h2> Neueste Episoden</h2>
+            <ul>
+                <li>Episode 1</li>
+                <li>Episode 2</li>
+            </ul>
+        </aside>
+    </article>
+        <footer>
+
+            <p>&copy; Raed Ismail</p>
+
+        </footer>
+    </div>
+</body>
+
+</html>

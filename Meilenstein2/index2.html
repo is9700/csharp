@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="src/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="src/assets/css/flex.css">
+<link rel="stylesheet" type="text/css" href="src/assets/css/index.css">
+<title>Home</title>
+
+</head>
+
+<body>
+
+<header  class="clearing">
+    
+      <img src="src/assets/img/img/weblogo.png" alt="Vdadar" width="50" height="50" class="floating"
+        >
+        <br>
+      <h1>
+      Liste der podcasts 
+      </h1>
+    </header> 
+ 
+  <nav  class="navigation" id="flexnav" >
+        
+    <a href="index.html">Home</a>
+
+
+    <a href="podcast.html">Podcasts</a>
+
+
+
+    <a href="episode.html">Episodes</a>
+
+
+
+    <a href="newPodcast.html">New Podcast</a>
+
+
+</nav>
+<div class="maincontainer">
+
+  <main>
+    <article class="container2">
+      <section>
+        <form action="https://labs.inf.fh-dortmund.de/podcastService/testPodcastSearch.php" method="get">
+          Title eingeben*:
+          <input type="text" name="pctitle" required="required" size="20" pattern="[A-Z]+[a-zA-Z]*"  maxlength="100" value="...">
+          
+            <input type="submit">
+          
+        </form>
+      </section>
+<section>
+      <ul>
+        <li>
+          <p>
+            <a href=podcast.html> <Strong>Working draft </Strong></a> <br> 
+            Anzahl der verfugbaren episodes : 20
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href=podcast.html><Strong>lage der Nation </Strong></a> <br> 
+            Anzahl der verfugbaren episodes : 22
+          </p>
+        </li>
+
+
+
+        <li>
+        <p>
+          <a href=podcast.html><Strong>Forschergeist </Strong></a> <br> 
+          Anzahl der verfugbaren episodes : 29
+        </p>
+        </li>
+      </ul>
+    </section>
+    <h2>Meine Podcasts</h2>
+    <div class="podcasts">
+       <div  class="kaschel"> <a href="podcast.html"> podcast1<img src="/src/assets/img/img/placeholder.svg" alt="placeholder" width="80"></a> </div>
+       <div  class="kaschel"> <a href="podcast.html"> podcast2<img src="/src/assets/img/img/placeholder.svg" alt="placeholder" width="80"></a> </div>
+       <div  class="kaschel"> <a href="podcast.html"> podcast3<img src="/src/assets/img/img/placeholder.svg" alt="placeholder" width="80"></a> </div>
+       <div  class="kaschel"> <a href="podcast.html"> podcast4<img src="/src/assets/img/img/placeholder.svg" alt="placeholder" width="80"></a> </div>
+    </div>
+ 
+  
+  </article >
+  </main>
+
+  <aside id="navigation">
+    <h2> Neueste Episoden</h2>
+    <ul>
+        <li>Episode 1</li>
+        <li>Episode 2</li>
+    </ul>
+    
+</aside>
+</div>
+  <footer>
+
+
+     &copy; Raed Ismail
+
+
+  </footer>
+
+</body>
+</html>

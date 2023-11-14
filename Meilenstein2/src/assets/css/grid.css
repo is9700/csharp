@@ -1,0 +1,69 @@
+.maincontainer {
+
+    display: grid;
+    grid-template-areas: "kopf kopf kopf"
+                         "navi navi navi"
+                         "haupt haupt seite"
+                         "fuss fuss fuss";
+    grid-template-columns: 15% auto 30%;
+
+}
+ 
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto 50%;
+    grid-template-rows: 50% auto;
+}
+header { grid-area: kopf;}  
+aside { grid-area: seite;}  
+nav { grid-area: navi;}  
+footer { grid-area: fuss;}  
+
+
+main {
+    grid-area: haupt;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+header, article, footer, aside, nav {
+    background-color: wheat;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        justify-content: end;
+    }
+    body {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    article {
+        justify-content: end;
+    }
+    article img {
+        max-width: 100%;
+        height: auto;
+        float: right;
+    }
+}
+@media screen and (max-width: 480px) {
+    article {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "heading"
+            "infos"
+            "list"
+            "image";
+            align-items: baseline;
+    }
+}

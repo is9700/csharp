@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow:wrap;
+}
+
+
+.maincontainer {
+    display: flex;
+  
+}
+
+main {
+    flex: 2 1 80%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+nav, aside {
+    flex-basis: 200px;
+}
+aside{
+    flex-direction: column;
+}
+ nav{
+    flex-direction: column;
+ }
+
+ .container2 {
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow:column;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+ aside{
+    display: none;
+ }
+}

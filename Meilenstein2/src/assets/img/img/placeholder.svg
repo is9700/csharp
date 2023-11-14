@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <path d="M0,0v300h300v-300L0,0Z" fill="none" stroke="#000" stroke-width="10" />
+    <path d="M0,300L300,0L0,300Z" fill="none" stroke="#000" stroke-width="5" />
+    <path d="M0,0L300,300" fill="none" stroke="#000" stroke-width="5" />
+</svg>

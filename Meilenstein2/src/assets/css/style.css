@@ -1,0 +1,75 @@
+h1 {
+    color: red;
+}
+
+h2 {
+    color: orange;
+}
+
+
+.navigation a[href$=".html"] {
+ 
+    text-decoration: none;
+    background-color: tan;
+    
+}
+
+.navigation a[href]:hover {
+    background-color: aqua;
+}
+tr:nth-of-type(odd), .highlighted {
+    background-color: lightblue;
+}
+
+h3 {
+    color: green;
+}
+
+form {
+    border-style: groove;
+}
+body
+{
+    font-family: Helvetica;
+   
+    font-size: 9pt;
+  
+}
+
+h1::first-letter {
+    color: orange;
+}
+
+aside {
+    background-color: beige;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+header,
+article,
+footer,
+nav {
+    background-color: bisque;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.floating
+{
+    float: left;
+}
+.clearing
+{
+    clear:both;
+}
+#flexnav
+{
+    display: flex;
+    flex-flow: wrap;
+}
